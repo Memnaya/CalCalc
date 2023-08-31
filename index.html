@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <link rel="preload" href="fonts/pt-sans-caption-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/pt-sans-caption-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Счётчик калорий</title>
+</head>
+<body class="page">
+  <main class="main">
+    <article class="container">
+    <h1>
+        Счётчик калорий
+    </h1>
+    <form class="counter" name="counter" action="#" method="post">
+
+        <h2>
+            Пол
+        </h2>
+        <ul class="gender_container">
+            <li>
+                <input type="radio" name="gender" checked>
+                <label>
+                    Мужчина
+                </label>
+            </li>
+            <li>
+                <input type="radio" name="gender">
+                <label>
+                    Женщина
+                </label>
+            </li>
+        </ul>
+
+        <fieldset class="params">
+            <legend>
+                Физические параметры
+            </legend>
+            <div class="param_column_first">
+                <div>
+                    <label>Возраст</label>
+                    <span>лет</span>
+                </div>
+                <div>
+                    <input type="text" placeholder="0">
+                </div>
+            </div>
+            <div class="params_column_second">
+                <div>
+                    <label>Рост</label>
+                    <span>см</span>
+                </div>
+                <div>
+                    <input type="text" placeholder="0">
+                </div>
+            </div>
+            <div class="param_column_third">
+                <div>
+                    <label>Вес</label>
+                    <span>кг</span>
+                </div>
+                <div>
+                    <input type="text" placeholder="0">
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+        <legend class="header_physical_activity">
+            Физическая активность
+        </legend>
+        <ul class="physical_activity">
+            <li>
+            <div>
+                <input type="radio">
+                <span class="custom_radio custom_radio_checked"></span>
+                <label class="physical_activity_checked">
+                    Минимальная
+                </label>
+            </div>
+            <p>
+                Сидячая работа и нет физических нагрузок
+            </p>
+            </li>
+            <li>
+            <div>
+                <input type="radio">
+                <span class="custom_radio"></span>
+                <label>
+                    Низкая
+                </label>
+            </div>
+            <p>
+                Редкие, нерегулярные тренировки, активность в быту
+            </p>
+            </li>
+            <li>
+            <div>
+                <input type="radio">
+                <span class="custom_radio"></span>
+                <label>
+                    Средняя
+                </label>
+            </div>
+            <p>
+                Тренировки 3-5 раз в неделю
+            </p>
+            </li>
+            <li>
+            <div>
+                <input type="radio">
+                <span class="custom_radio"></span>
+                <label>
+                    Высокая
+                </label>
+            </div>
+            <p>
+                Тренировки 6-7 раз в неделю
+            </p>
+            </li>
+            <li>
+            <div>
+                <input type="radio">
+                <span class="custom_radio"></span>
+                <label>
+                    Очень высокая
+                </label>
+            </div>
+            <p>
+                Больше 6 тренировок в неделю и физическая работа
+            </p>
+            </li>
+        </ul>
+        </fieldset>
+
+        <button class="submit" name="submit" type="submit">
+            Рассчитать
+        </button>
+        <button class= "reset" name="reset" type="reset" disabled>
+            <img class="reset_svg" src="img/icon-cross.svg" alt="svg" width="24">
+            <span>
+                Очистить поля и расчёт
+            </span>
+        </button>
+    </form>
+
+    <section>
+        <h2>
+            Ваша норма калорий
+        </h2>
+        <ul >
+            <li>
+                <h3>
+                <span class="normal_cal">3 800</span> ккал
+                </h3>
+                <p>
+                    поддержание веса
+                </p>
+            </li>
+            <li>
+                <h3>
+                <span>3 300</span> ккал
+                </h3>
+                <p>
+                    снижение веса
+                </p>
+            </li>
+            <li>
+                <h3>
+                <span>4 000</span> ккал
+                </h3>
+                <p>
+                    набор веса
+                </p>
+            </li>
+        </ul>
+    </section>
+    </article>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

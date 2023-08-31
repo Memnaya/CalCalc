@@ -1,0 +1,229 @@
+@font-face {
+    font-family: "Pt-sans-caption-reg";
+    src: url("../fonts/pt-sans-caption-regular.woff2");
+}
+
+@font-face {
+    font-family: "Pt-sans-caption-bold";
+    src: url("../fonts/pt-sans-caption-bold.woff2");
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.page {
+    background-image: url("../img/main-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: Pt-sans-caption-reg, sans-serif;
+}
+
+.container {
+    margin-top: 10px;
+    max-width: 560px;
+}
+
+h1  {
+    font-family: Pt-sans-caption-bold, sans-serif;
+    color: white;
+    font-size: 60px;
+    line-height: 83px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.counter {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 40px 32px;
+    border-radius: 16px;
+}
+
+h2 {
+    font-family: Pt-sans-caption-reg, sans-serif;
+    margin-bottom: 16px;
+}
+
+.gender_container {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.gender_container > li {
+    padding: 14px;
+    border: 0.5px solid #fd7d36;
+    font-family: Pt-sans-caption-reg, sans-serif;
+    text-align: center;
+}
+
+.gender_container li:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    flex-grow: 1;
+}
+
+.gender_container li:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: #fd7d36;
+    color: white;
+    flex-grow: 1;
+}
+
+
+input[name="gender"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+fieldset > legend {
+    display: none;
+}
+
+.params {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 97px;
+    margin-bottom: 34px
+}
+
+input[type="text"] {
+    width: 80px;
+    height: 40px;
+    margin: 0;
+    padding: 10px 5px;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    outline: none;
+    border-radius: 4px;
+    border: 0.5px solid;
+}
+
+.params_column_second {
+    margin-right: 47px;
+}
+
+input[type="text"]:focus::placeholder {
+    color: transparent;
+}
+.params div:nth-child(odd) label {
+    font-family: Pt-sans-caption-bold, sans-serif;
+    font-size: 32px;
+    line-height: 41px;
+}
+
+.params > div > div > span {
+    line-height: 30px;
+    color: #9e9e9e;
+}
+
+input[type="radio"] {
+    position: absolute;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.custom_radio {
+    position: absolute;
+    background-image: url("../img/icon-radio-empty.svg");
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.custom_radio_checked {
+    background-image: url("../img/icon-radio-checked.svg");
+}
+
+.physical_activity {
+    margin-top: 60px;
+}
+
+.physical_activity > li > p {
+    color: #9e9e9e;
+    margin-left: 30px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.physical_activity > li > div > label {
+    margin-left: 30px;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.physical_activity_checked {
+    color: #fd7d36;
+}
+
+.header_physical_activity {
+    display: block;
+    position: absolute;
+    font-family: Pt-sans-caption-bold, sans-serif;
+    font-size: 32px;
+    line-height: 41px;
+}
+
+.submit {
+    margin-top: 20px;
+    background-color: #dcdcdc;
+    color: white;
+    padding: 20px 24px;
+    font-family: PT Sans Caption,Arial,sans-serif;
+    font-size: 24px;
+    line-height: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.reset > span {
+    color: #d1d1d1;
+    font-size: 20px;
+    line-height: 16px;
+}
+
+.reset {
+    color: #d1d1d1;
+    border: none;
+    background-color: transparent;
+    padding-left: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reset_svg {
+    filter: grayscale(90%) opacity(32%);
+}
+
+
+section {
+    display: none;
+}
